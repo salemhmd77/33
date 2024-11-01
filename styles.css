@@ -1,0 +1,114 @@
+/* إعدادات الصفحة الأساسية */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Cairo', sans-serif;
+    background-image: url('https://example.com/earth.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.6); /* خلفية داكنة لنصوص مقروءة */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+img {
+    max-width: 100%; /* تأكد من أن الصورة تتناسب مع العرض */
+    height: auto;
+    border-radius: 10px; /* حواف دائرية للصورة */
+    margin-bottom: 20px;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #363636;
+    font-family: 'Cairo', sans-serif;
+}
+
+/* تنسيق صندوق توليد كلمة المرور */
+.password-generator-container {
+    width: 100%;
+    max-width: 420px;
+    padding: 25px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.password-generator-container h2 {
+    color: #4A4A4A;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    font-size: 1.5em;
+}
+
+/* تنسيق حقل كلمة المرور */
+.password-display {
+    width: 100%;
+    padding: 12px;
+    font-size: 18px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    color: #333;
+    background-color: #fafafa;
+    font-weight: 500;
+    transition: border-color 0.3s;
+}
+
+.password-display:focus {
+    border-color: #4CAF50;
+}
+
+/* إعدادات الخيارات */
+.options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+    font-size: 15px;
+    color: #333;
+}
+
+/* تنسيق طول كلمة المرور */
+.options input[type="number"] {
+    width: 70px;
+    padding: 7px;
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 15px;
+}
+
+/* تنسيق الزر */
+.generate-btn {
+    width: 100%;
+    padding: 12px;
+    margin-top: 15px;
+    background-color: #4CAF50;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.generate-btn:hover {
+    background-color: #45a049;
+}
+
+/* تنسيق الرابط */
+.generate-btn:active {
+    background-color: #3e8e41;
+}

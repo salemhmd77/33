@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Générateur de Mot de Passe</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css"> <!-- ربط ملف CSS -->
+</head>
+<body>
+
+    <div class="password-generator-container">
+        <h2>Générateur de Mot de Passe</h2>
+        <input type="text" id="password-display" class="password-display" readonly placeholder="كلمة المرور هنا">
+        
+        <div class="options">
+            <label>Longueur du Mot de Passe:
+                <input type="number" id="length" value="12" min="4" max="20">
+            </label>
+        </div>
+
+        <div class="options">
+            <label><input type="checkbox" id="include-numbers" checked> Chiffres</label>
+        </div>
+
+        <button class="generate-btn" onclick="generatePassword()">Générer un Mot de Passe</button>
+    </div>
+
+    <script src="script.js"></script> <!-- ربط ملف JavaScript -->
+</body>
+</html>
